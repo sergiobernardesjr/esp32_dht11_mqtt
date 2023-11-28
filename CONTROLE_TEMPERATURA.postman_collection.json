@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "5a495b86-e7cc-466c-b265-20bce63ef8a7",
+		"name": "CONTROLE_TEMPERATURA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6418578"
+	},
+	"item": [
+		{
+			"name": "geral",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"modo\": \"ON\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/comando/geral",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comando",
+						"geral"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "configuracao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"temperatura\": 25,\n    \"modo\": \"S\",\n    \"velocidade\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/comando/configuracao",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comando",
+						"configuracao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "leitura",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sensor\": \"H\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/comando/leitura",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"comando",
+						"leitura"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
