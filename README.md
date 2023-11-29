@@ -159,7 +159,11 @@ MQTT configurado bem como a API para conexão do mesmo.
 
 ## Diagrama de Arquitetura
 
+Estrutura funcinal
+
 ![alt text](ESTRUTURA.png "Estrutura funcional")
+
+Diagrama de blocos
 
 ![alt_text](SENSOR.png "Diagrama de Blocos")
 
