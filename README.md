@@ -78,8 +78,6 @@ para estoques de folhas ou sala de servidores.
     comando que não está na estrutura esperada deve ser retornando no
     tópico "error" do servidor MQTT o texto "Comando inválido.".
 
-\+
-
 ## Requisitos Não Funcionais
 
 1.  Conexão WIFI
@@ -117,8 +115,6 @@ para estoques de folhas ou sala de servidores.
     para atender o requisito de manter temperatura default informada
     pelo usuário.
 
-\+
-
 ## Casos de Uso
 
 Caso 01: Usuário quer obter uma leitura da temperatura no ambiente:
@@ -147,15 +143,12 @@ deverá ter como retorno um objeto { success: true }.
 -   Gerenciar de maneira inteligente a temperatura no ambiente de forma
     automática conforme valores coletados.
 
-\-
-
 ## Restrições
 
 -   Precisar ter uma API para tornar mais amigável a interação entre
     usuário e sensor, contudo o desenvolvimento da API demora mais tempo
     que a lógica do sensor.
 
-\-
 
 # Arquitetura do Sistema
 
@@ -180,15 +173,12 @@ Listar os componentes do sistema
 4.  Chip WIFI
 5.  Conectar RJ45
 
-\+
 
 ## Integrações Externas
 
 Listar as integrações externas
 
 1.  Integração com placa de ar condicionado.
-
-\+
 
 # Descrição Funcional
 
@@ -200,8 +190,6 @@ Listar as integrações externas
 -   nodejs
 -   fastify
 -   mqtt
-
-\-
 
 ## Metodologia de Desenvolvimento
 
@@ -224,11 +212,8 @@ Listar as integrações externas
 }
 
 1.  Usuário quer desligar o ar condicionado: Efetuar a chamada para um
-    endpoint POST -> /api/comando/geral com body { "ligar": OFF
+    endpoint POST -> /api/comando/geral com body { "ligar": OFF }
 
-}
-
-\+
 
 ## Resultados dos testes
 
@@ -237,8 +222,6 @@ Listar as integrações externas
 2.  Deverá ter como retorno um objeto { success: true }.
 3.  Deverá ter como retorno um objeto { success: true }.
 
-\+
-
 ## Testes de integração
 
 1.  A API deve enviar o comando R\|T para o tópico "comandos" broker
@@ -246,15 +229,11 @@ Listar as integrações externas
 2.  O sensor deve monitorar o tópico "comandos" para tratar as mensagens
     recebidas.
 
-\+
-
 ## Testes de aceitação
 
 1.  O usuário deve poder visualizar o valor da temperatura de maneira
     automática.
 2.  O comando de configuração da temperatura deve estar 100% funcional.
-
-\+
 
 # Gerenciamento de projeto
 
